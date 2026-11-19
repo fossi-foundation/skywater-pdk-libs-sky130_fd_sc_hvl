@@ -1,10 +1,10 @@
-* Copyright 2020 The SkyWater PDK Authors
+* Copyright 2026 FOSSi Foundation
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 *
-*     https://www.apache.org/licenses/LICENSE-2.0
+*	https://www.apache.org/licenses/LICENSE-2.0
 *
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,15 +13,16 @@
 * limitations under the License.
 *
 * SPDX-License-Identifier: Apache-2.0
-
+* NGSPICE file created from sky130_fd_sc_hvl__or3_1.ext - technology: sky130A
 
 .subckt sky130_fd_sc_hvl__or3_1 A B C VGND VNB VPB VPWR X
-X0 VGND a_30_107# X VNB sky130_fd_pr__nfet_g5v0d10v5 w=750000u l=500000u
-X1 VPWR a_30_107# X VPB sky130_fd_pr__pfet_g5v0d10v5 w=1.5e+06u l=500000u
-X2 a_30_107# C VGND VNB sky130_fd_pr__nfet_g5v0d10v5 w=420000u l=500000u
-X3 a_30_107# C a_190_464# VPB sky130_fd_pr__pfet_g5v0d10v5 w=420000u l=500000u
-X4 a_341_464# A VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 w=420000u l=500000u
-X5 a_30_107# A VGND VNB sky130_fd_pr__nfet_g5v0d10v5 w=420000u l=500000u
-X6 VGND B a_30_107# VNB sky130_fd_pr__nfet_g5v0d10v5 w=420000u l=500000u
-X7 a_190_464# B a_341_464# VPB sky130_fd_pr__pfet_g5v0d10v5 w=420000u l=500000u
+X0 X a_30_107# VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.2568 ps=1.99 w=1.5 l=0.5
+X1 a_190_464# C a_30_107# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.05355 pd=0.675 as=0.1197 ps=1.41 w=0.42 l=0.5
+X2 X a_30_107# VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.13942 ps=1.19 w=0.75 l=0.5
+X3 a_30_107# B VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.0588 pd=0.7 as=0.0609 ps=0.71 w=0.42 l=0.5
+X4 a_341_464# B a_190_464# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.0441 pd=0.63 as=0.05355 ps=0.675 w=0.42 l=0.5
+X5 VPWR A a_341_464# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.2568 pd=1.99 as=0.0441 ps=0.63 w=0.42 l=0.5
+X6 VGND C a_30_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.0609 pd=0.71 as=0.1113 ps=1.37 w=0.42 l=0.5
+X7 VGND A a_30_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.13942 pd=1.19 as=0.0588 ps=0.7 w=0.42 l=0.5
 .ends
+
