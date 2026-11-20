@@ -1,10 +1,10 @@
-* Copyright 2020 The SkyWater PDK Authors
+* Copyright 2026 FOSSi Foundation
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 *
-*     https://www.apache.org/licenses/LICENSE-2.0
+*	https://www.apache.org/licenses/LICENSE-2.0
 *
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,13 +13,14 @@
 * limitations under the License.
 *
 * SPDX-License-Identifier: Apache-2.0
-
+* NGSPICE file created from sky130_fd_sc_hvl__nand3_1.ext - technology: sky130A
 
 .subckt sky130_fd_sc_hvl__nand3_1 A B C VGND VNB VPB VPWR Y
-X0 VPWR A Y VPB sky130_fd_pr__pfet_g5v0d10v5 w=1.5e+06u l=500000u
-X1 VGND C a_243_107# VNB sky130_fd_pr__nfet_g5v0d10v5 w=750000u l=500000u
-X2 VPWR C Y VPB sky130_fd_pr__pfet_g5v0d10v5 w=1.5e+06u l=500000u
-X3 a_385_107# A Y VNB sky130_fd_pr__nfet_g5v0d10v5 w=750000u l=500000u
-X4 a_243_107# B a_385_107# VNB sky130_fd_pr__nfet_g5v0d10v5 w=750000u l=500000u
-X5 Y B VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 w=1.5e+06u l=500000u
+X0 Y A VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.4275 pd=3.57 as=0.375 ps=2 w=1.5 l=0.5
+X1 a_243_107# C VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.07875 pd=0.96 as=0.21375 ps=2.07 w=0.75 l=0.5
+X2 a_385_107# B a_243_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.1575 pd=1.17 as=0.07875 ps=0.96 w=0.75 l=0.5
+X3 Y C VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.21 pd=1.78 as=0.4275 ps=3.57 w=1.5 l=0.5
+X4 VPWR B Y VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.375 pd=2 as=0.21 ps=1.78 w=1.5 l=0.5
+X5 Y A a_385_107# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.2175 pd=2.08 as=0.1575 ps=1.17 w=0.75 l=0.5
 .ends
+

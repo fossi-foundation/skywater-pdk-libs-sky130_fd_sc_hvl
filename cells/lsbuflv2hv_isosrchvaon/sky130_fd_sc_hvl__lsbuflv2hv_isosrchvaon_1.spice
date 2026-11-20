@@ -1,10 +1,10 @@
-* Copyright 2020 The SkyWater PDK Authors
+* Copyright 2026 FOSSi Foundation
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 *
-*     https://www.apache.org/licenses/LICENSE-2.0
+*	https://www.apache.org/licenses/LICENSE-2.0
 *
 * Unless required by applicable law or agreed to in writing, software
 * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,25 +13,26 @@
 * limitations under the License.
 *
 * SPDX-License-Identifier: Apache-2.0
-
+* NGSPICE file created from sky130_fd_sc_hvl__lsbuflv2hv_isosrchvaon_1.ext - technology: sky130A
 
 .subckt sky130_fd_sc_hvl__lsbuflv2hv_isosrchvaon_1 A SLEEP_B LVPWR VGND VNB VPB VPWR
 + X
-X0 a_176_993# a_229_967# a_341_485# VPB sky130_fd_pr__pfet_g5v0d10v5 w=420000u l=2e+06u
-X1 a_341_183# SLEEP_B a_507_107# VNB sky130_fd_pr__nfet_g5v0d10v5 w=750000u l=500000u
-X2 X a_229_967# a_341_485# VPB sky130_fd_pr__pfet_g5v0d10v5 w=750000u l=500000u
-X3 a_188_1293# a_553_1225# a_229_967# VNB sky130_fd_pr__nfet_g5v0d10v5 w=1e+06u l=500000u
-X4 a_341_183# A a_241_1225# VNB sky130_fd_pr__nfet_01v8 w=740000u l=150000u
-X5 a_188_1293# a_241_1225# a_176_993# VNB sky130_fd_pr__nfet_g5v0d10v5 w=1e+06u l=500000u
-X6 a_341_485# SLEEP_B a_507_107# VPB sky130_fd_pr__pfet_g5v0d10v5 w=1.5e+06u l=500000u
-X7 a_188_1293# SLEEP_B a_341_183# VNB sky130_fd_pr__nfet_g5v0d10v5 w=5e+06u l=600000u
-X8 a_553_1225# a_241_1225# LVPWR LVPWR sky130_fd_pr__pfet_01v8_hvt w=1.12e+06u l=150000u
-X9 a_553_1225# a_241_1225# VGND VNB sky130_fd_pr__nfet_01v8 w=740000u l=150000u
-X10 a_341_183# SLEEP_B a_188_1293# VNB sky130_fd_pr__nfet_g5v0d10v5 w=5e+06u l=600000u
-X11 a_176_993# a_241_1225# a_188_1293# VNB sky130_fd_pr__nfet_g5v0d10v5 w=1e+06u l=500000u
-X12 a_341_485# a_176_993# a_229_967# VPB sky130_fd_pr__pfet_g5v0d10v5 w=420000u l=2e+06u
-X13 X a_229_967# a_341_183# VNB sky130_fd_pr__nfet_g5v0d10v5 w=750000u l=500000u
-X14 a_176_993# a_507_107# a_341_183# VNB sky130_fd_pr__nfet_g5v0d10v5 w=1e+06u l=800000u
-X15 LVPWR A a_241_1225# LVPWR sky130_fd_pr__pfet_01v8_hvt w=1.12e+06u l=150000u
-X16 a_229_967# a_553_1225# a_188_1293# VNB sky130_fd_pr__nfet_g5v0d10v5 w=1e+06u l=500000u
+X0 a_188_1293# SLEEP_B VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=1.325 pd=10.53 as=0.7 ps=5.28 w=5 l=0.6
+X1 a_188_1293# a_553_1225# a_229_967# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.265 pd=2.53 as=0.14 ps=1.28 w=1 l=0.5
+X2 a_241_1225# A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.2109 pd=2.05 as=0.2627 ps=2.19 w=0.74 l=0.15
+X3 a_176_993# a_241_1225# a_188_1293# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.14 pd=1.28 as=0.265 ps=2.53 w=1 l=0.5
+X4 VGND a_507_107# a_176_993# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.16062 pd=1.34 as=0.265 ps=2.53 w=1 l=0.8
+X5 a_229_967# a_176_993# VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.1113 pd=1.37 as=0.0588 ps=0.7 w=0.42 l=2
+X6 VPWR a_229_967# X VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.19875 ps=2.03 w=0.75 l=0.5
+X7 a_241_1225# A LVPWR LVPWR sky130_fd_pr__pfet_01v8_hvt ad=0.3304 pd=2.83 as=0.3864 ps=2.93 w=1.12 l=0.15
+X8 VGND a_229_967# X VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.19875 ps=2.03 w=0.75 l=0.5
+X9 a_507_107# SLEEP_B VGND VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.19875 pd=2.03 as=0.16062 ps=1.34 w=0.75 l=0.5
+X10 LVPWR a_241_1225# a_553_1225# LVPWR sky130_fd_pr__pfet_01v8_hvt ad=0.3864 pd=2.93 as=0.3304 ps=2.83 w=1.12 l=0.15
+X11 a_229_967# a_553_1225# a_188_1293# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.5
+X12 VGND SLEEP_B a_188_1293# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.7 pd=5.28 as=1.325 ps=10.53 w=5 l=0.6
+X13 VPWR a_229_967# a_176_993# VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.0588 pd=0.7 as=0.1113 ps=1.37 w=0.42 l=2
+X14 a_507_107# SLEEP_B VPWR VPB sky130_fd_pr__pfet_g5v0d10v5 ad=0.3975 pd=3.53 as=0.3975 ps=3.53 w=1.5 l=0.5
+X15 a_188_1293# a_241_1225# a_176_993# VNB sky130_fd_pr__nfet_g5v0d10v5 ad=0.14 pd=1.28 as=0.14 ps=1.28 w=1 l=0.5
+X16 VGND a_241_1225# a_553_1225# VNB sky130_fd_pr__nfet_01v8 ad=0.2627 pd=2.19 as=0.2109 ps=2.05 w=0.74 l=0.15
 .ends
+
